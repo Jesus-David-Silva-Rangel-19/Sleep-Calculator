@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Sueño</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Sueño</h1>
+        <label for="bedtime">Hora de dormir:</label>
+        <input type="time" id="bedtime">
+
+        <label for="waketime">Hora de despertar:</label>
+        <input type="time" id="waketime">
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" min="0" max="120">
+
+        <!--Selector para elegir la profesión-->
+        <label for="profesion">Profesión:</label>
+        <select id="profesion">
+            <option value="1">Estudiante</option>
+            <option value="2">Médico</option>
+            <option value="3">Ingeniero</option>
+            <option value="4">Abogado</option>
+            <option value="5">Profesor</option>
+            <option value="6">Policía</option>
+            <option value="7">Bombero</option>
+            <option value="8">Astronauta</option>
+            <option value="9">Piloto</option>
+            <option value="10">Científico</option>
+            <option value="3">Jubilado</option>
+        </select>
+
+        <button onclick="calcularSueno()">Calcular Tiempo de Sueño</button>
+
+        <div class="result" id="resultado"></div>
+        <div class="recommendation" id="recomendacion"></div>
+
+        <button id="calcularIdeal">Calcular Hora Ideal para Despertar</button>
+        <div class="ideal-time" id="horaIdeal"></div>
+        
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
